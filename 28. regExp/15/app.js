@@ -58,15 +58,17 @@ function check(array) {
       arr.indexOf(array[0].toUpperCase()),
       arr.indexOf(array[array.length - 1].toUpperCase()) + 1
     );
-    console.log(newArr);
     for (let i = 0; i < newArr.length; i++) {
       if (
         !array.includes(newArr[i].toLowerCase()) &&
-        newArr[0].toLowerCase() == array[0]
+        array[0] == array[0].toLowerCase()
       ) {
         console.log(newArr[i].toLowerCase());
-      } else if (!array.includes(newArr[i]) && newArr[0] == array[0]) {
-        console.log(newArr[i]);
+      } else if (
+        !array.includes(newArr[i]) &&
+        array[0] == array[0].toUpperCase()
+      ) {
+        console.log(newArr[i].toUpperCase());
       }
     }
   } catch (error) {
@@ -74,4 +76,4 @@ function check(array) {
   }
 }
 
-check(["O", "Q", "R", "S"]);
+check(["a", "b", "c", "d", "f"]);
