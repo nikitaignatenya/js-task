@@ -59,12 +59,19 @@ function check(array) {
       arr.indexOf(array[array.length - 1].toUpperCase()) + 1
     );
     console.log(newArr);
-    newArr.forEach((el) => {
-      !array.includes(el) ? console.log(el) : null;
-    });
+    for (let i = 0; i < newArr.length; i++) {
+      if (
+        !array.includes(newArr[i].toLowerCase()) &&
+        newArr[0].toLowerCase() == array[0]
+      ) {
+        console.log(newArr[i].toLowerCase());
+      } else if (!array.includes(newArr[i]) && newArr[0] == array[0]) {
+        console.log(newArr[i]);
+      }
+    }
   } catch (error) {
     console.log(error);
   }
 }
 
-check(["T", "U", "V", "W", "X", "Z"]);
+check(["O", "Q", "R", "S"]);
