@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body .but {
+  margin: 20px;
+  width: 70px;
+  padding: 5px;
+}
+body .container .cart {
+  padding: 5px 30px;
+  max-width: 300px;
+  margin-top: 20px;
+  margin-left: 50px;
+  background-color: antiquewhite;
+}
+body .container .modal {
+  width: 300px;
+  margin: 0 auto; /* Центрирование */
+  background-color: wheat;
+  padding: 20px;
+  border-radius: 8px;
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+  .close {
+    width: 100px;
+  }
+}

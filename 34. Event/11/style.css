@@ -1,0 +1,21 @@
+ul {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  li {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    list-style: none;
+    margin-top: 10px;
+  }
+}
+
+table {
+  margin-top: 100px;
+}
+
+td {
+  padding: 5px;
+  border: 1px solid black;
+}
