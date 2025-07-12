@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Мой список дел</title>
+    <style>
+      .completed {
+        text-decoration: line-through;
+        color: gray;
+      }
+      li {
+        margin: 5px 0;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Мои дела</h1>
+    <input type="text" id="newTodo" placeholder="Добавить дело" />
+    <button onclick="addTodo()">Добавить</button>
+    <ul id="todoList"></ul>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
