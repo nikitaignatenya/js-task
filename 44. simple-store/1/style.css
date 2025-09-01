@@ -1,0 +1,13 @@
+body .containerCreate {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px;
+  & input {
+    margin-right: 15px;
+  }
+}
+
+body .list li {
+  margin-top: 20px;
+}
