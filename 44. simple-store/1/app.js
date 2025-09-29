@@ -67,3 +67,5 @@ async function updateFunc(id, event) {
       ${resPut.id}, event
     )">Update</button>`;
 }
+
+const hi = "hello";
